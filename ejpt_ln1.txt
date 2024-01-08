@@ -1,0 +1,16 @@
+WEBDAV Testing 
+Tools Used:
+  NMAP - Used for port enumeration and scanning
+  CADAVER - Used to exploit the webdav upload function vulnerability 
+  DAVTEST - Testing for uploading diff file extensions and checking which one can be executed
+This vulnerability is very interesting. The WebDav does not allow to upload or rename files with the extension .asp.
+But you can bypass this adding at the end of the name ";.txt" and the file will be executed
+as if it were a .asp file (you could also use ".html" instead of ".txt" but DON'T forget the ";").
+Then you can upload your shell as a ".txt" file and copy/move it to a ".asp;.txt" file. 
+An accessing that file through the web server, it will be executed (cadaver will said that the move action didn't work, but it did).
+
+STEPS:
+1 NMAP Enumeration :
+     nmap -sV -sC $IP -vvvv
+        sV - Service Version Detection for different services running on the IP
+        sC - Default Nmap script to check the 
