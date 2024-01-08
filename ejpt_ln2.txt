@@ -1,0 +1,8 @@
+Exploiting SMB using PSEXEC:
+SMB - Server Message Block - Used to share files between their local networks
+used 
+auxiliary/scanner/smb/smb_login - get login creds
+
+
+
+PSEXEC 
