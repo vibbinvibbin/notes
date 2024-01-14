@@ -1,0 +1,31 @@
+Passive Reconassaince:
+Information Gathering:
+
+
+Target: $ip
+
+1.host $ip
+
+2./robots.txt - Usually the search engines will  crawl the website and indexed it on google.com i.e it will be in public
+ 	what robots.txt will do is it will disallow some specific to get indexed by search engines
+
+3. /sitemap.xml 
+     	lists a website's essential pages, making sure Google can find and crawl them all.
+
+4. builtwith addon for web tech detection
+
+5. whatweb - prebuilt in kali 
+	 CMD::::whatweb $ip
+
+6. Download the entire website and analyse the source code of the website - www.httrack.com
+
+7 WHOIS LOOKUP:
+ 
+ CMD whois $ip
+  WEBSITE : who.is
+
+8 Website Footprinting with netcraft
+
+9 DNS Recon
+	dnsrecon - python script
+	
