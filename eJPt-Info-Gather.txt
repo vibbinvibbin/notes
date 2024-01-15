@@ -1,4 +1,4 @@
-Passive Reconassaince:
+****************************Passive Reconassaince:**********************************
 Information Gathering:
 
 
@@ -28,4 +28,13 @@ Target: $ip
 
 9 DNS Recon
 	dnsrecon - python script
+	dnsrecon -d $ip
+--------- dnsdumpster.com --------- personal best
+10 wafw00f - wafw00f $ip -a
+
+**********************SUBDOMAIN ENUMERATION ****************************
+1 //////////  Sublist3r - 
+
+
+
 	
