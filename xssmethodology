@@ -39,3 +39,4 @@ cat unique_urls2.txt | grep -E "\.php|\.asp|\.aspx|\.cfm|\.jsp" | sort > output.
 
 # For URLs without any extension
 grep -v "http[^ ]*\.[^/]*\." unique_urls2.txt | grep "http" | sort > clean_urls.txt
+
